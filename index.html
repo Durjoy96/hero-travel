@@ -1,42 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Travel</title>
-    <!-- Google fonts cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <!-- DaisyUI cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- TailWindcss Cdn -->
-     <script src="https://cdn.tailwindcss.com"></script>
-     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                
-              },
-              fontFamily: {
-                mulish: ['Mulish', 'sans-serif']
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Travel</title>
+  <!-- Google fonts cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <!-- DaisyUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- TailWindcss Cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            base_content: '#131318',
+            primary_color: '#FF5400',
+            primary_content: '#ffffff',
+          },
+          fontFamily: {
+            mulish: ['Mulish', 'sans-serif']
           }
         }
-      </script>
-    
+      }
+    }
+  </script>
+
 </head>
+
 <body class="font-mulish">
-    <header>
+  <header class="max-w-screen-xl mx-auto p-5">
+    <nav>
+      <div class="navbar bg-base-100 justify-between">
+        <!-- logo -->
+        <div class="navbar-start">
+          <a class="text-4xl font-extrabold text-base_content flex items-center gap-1"><img src="assets/Images/icon.png"
+              alt="icon">Hero <span class="text-primary_color">Travel</span></a>
+        </div>
+        <!-- large screen navbar menu -->
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="" class="text-primary_color font-bold">Home</a></li>
+            <li><a href="">Packages</a></li>
+            <li><a href="">Testimonial</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <!-- small devices navbar menu -->
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 absolute right-0" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-2 w-32 p-2 shadow">
+            <li><a href="" class="text-primary_color font-bold">Home</a></li>
+            <li><a href="">Packages</a></li>
+            <li><a href="">Testimonial</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
 
-    </header>
-    <main>
+  </main>
+  <footer>
 
-    </main>
-    <footer>
-
-    </footer>
+  </footer>
 </body>
+
 </html>
