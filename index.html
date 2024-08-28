@@ -14,6 +14,8 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <!-- TailWindcss Cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- fontawesome cdn -->
+  <script src="https://kit.fontawesome.com/4a82536f30.js" crossorigin="anonymous"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -72,9 +74,40 @@
       </div>
     </nav>
     <!-- hero section -->
-     <div class="h-[500px] rounded-2xl mt-12"  style="background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%), url('assets/Images/hero-banner.png');
+    <div class="h-[500px] rounded-2xl mt-12 px-6 py-8 md:px-0 md:py-28" style="background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%), url('assets/Images/hero-banner.png');
      background-repeat: no-repeat; background-size: cover;">
-     </div>
+     <!-- main container -->
+      <div class="max-w-[800px] mx-auto">
+        <!-- text -->
+        <div>
+          <h1 class="text-2xl font-extrabold text-white text-center md:text-6xl">Explore Your Travel</h1>
+          <p class="text-sm font-normal text-white mt-6 text-center md:text-base">Dolor sit amet consectetur. Nullam
+            suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
+        </div>
+        <!-- card -->
+        <div class="bg-white bg-opacity-30 p-4 rounded-lg mt-8 md:mt-12">
+          <!-- input fields -->
+          <div class="flex gap-4 md:gap-8">
+            <input class="flex-1 rounded-lg px-4 focus:outline-primary_color placeholder:text-[#13131880]" type="text" placeholder="Where go">
+            <div class="dropdown flex-1">
+              <div tabindex="0" role="button" class="btn w-full justify-start text-[#13131880]"><span class="flex justify-between w-full"><span>When</span><i class="fa-solid fa-angle-down"></i></span></div>
+              <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] mt-2 w-full p-2 shadow">
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+              </ul>
+            </div>
+            <div class="dropdown flex-1">
+              <div tabindex="0" role="button" class="btn w-full justify-start text-[#13131880]"><span class="flex justify-between w-full"><span>Select Type</span><i class="fa-solid fa-angle-down"></i></span></div>
+              <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] mt-2 w-full p-2 shadow">
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+              </ul>
+            </div>
+            <button class="flex-1 bg-primary_color rounded-lg text-white">Find Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <main>
 
