@@ -22,6 +22,7 @@
         extend: {
           colors: {
             base_content: '#131318',
+            base_content_secondary: 'rgba(19, 19, 24, 0.7)',
             primary_color: '#FF5400',
             primary_content: '#ffffff',
           },
@@ -42,7 +43,7 @@
       <div class="navbar bg-base-100 justify-between">
         <!-- logo -->
         <div class="navbar-start">
-          <a class="text-4xl font-extrabold text-base_content flex items-center gap-1"><img src="assets/Images/icon.png"
+          <a class="text-xl font-extrabold text-base_content flex items-center gap-1 md:text-4xl"><img src="assets/Images/icon.png"
               alt="icon">Hero <span class="text-primary_color">Travel</span></a>
         </div>
         <!-- large screen navbar menu -->
@@ -110,7 +111,23 @@
     </div>
   </header>
   <main>
-
+    <section class="max-w-screen-xl mx-auto px-5 mt-6 md:mt-24">
+      <div class="grid grid-cols-1 gap-8  md:grid-cols-2 md:gap-0">
+        <div class="max-w-lg">
+          <h2 class="text-xl font-extrabold text-base_content md:text-4xl">Our Popular Tours</h2>
+          <p class="text-sm text-base_content_secondary mt-4 md:text-base md:mt-6">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+          <ul class="space-y-3 mt-4 md:space-y-4 md:mt-6">
+            <li class="list-disc list-inside text-sm text-base_content_secondary md:text-base">Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</li>
+            <li class="list-disc list-inside text-sm text-base_content_secondary md:text-base">Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+            <li class="list-disc list-inside text-sm text-base_content_secondary md:text-base"> Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li>
+          </ul>
+          <p class="text-sm text-base_content_secondary mt-4 md:text-base md:mt-6">Amet consectetur. Vulputate commodo felis molestie risus 
+            ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
+          <button class="bg-primary_color rounded-lg px-8 py-2 mt-6 font-bold text-white text-lg md:mt-8">Read More</button>
+        </div>
+          <img class="w-full" src="assets/Images/popular-location.png" alt="popular-location">
+      </div>
+    </section>
   </main>
   <footer>
 
